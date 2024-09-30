@@ -13,7 +13,8 @@ export default function Home() {
   // Define items, settings, and change handler for GanttChartView.
   // Note: use setItems if you need to update GanttChartView's data later.
   const date = new Date(), year = date.getFullYear(), month = date.getMonth();
-  const tasks = [{ content: 'Planning', label: 'Planning', isExpanded: false },
+  const tasks = [
+    { content: 'Planning', label: 'Planning', isExpanded: false },
     { content: 'Analysis', indentation: 1, start: new Date(year, month, 2, 8, 0, 0), finish: new Date(year, month, 3, 16, 0, 0), assignmentsContent: 'Clarissa Candelaria [50%]' },
     { content: 'Requirements', indentation: 1, start: new Date(year, month, 3, 8, 0, 0), finish: new Date(year, month, 4, 16, 0, 0), assignmentsContent: 'Clarissa Candelaria  [50%], Tyson Lamberson' },
     { content: 'Review', label: 'Review', indentation: 1, start: new Date(year, month, 2, 16, 0, 0), isMilestone: true, assignmentsContent: 'Clarissa Candelaria' },
